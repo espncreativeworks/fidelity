@@ -1,0 +1,27 @@
+.modal {
+	color: #000;
+	
+	strong {
+		color: $fidelity-green;
+	}
+	
+  .modal-title {
+  	color: $fidelity-green;
+    text-transform: uppercase;
+  }
+  
+  .btn-primary {
+  	background-color: #fff;
+  	border-color: #ccc;
+  }
+  .btn-primary:hover {
+  	background-color: $fidelity-green;
+  }
+  a {
+  	color: $fidelity-green;
+  }
+  a:hover {
+  	color: #000;
+  }
+}
+

@@ -1,0 +1,53 @@
+.trades {
+	background-image: url($image-path + 'bg_trades.jpg');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-color: $fidelity-html-bg;
+	
+	.left, .right {
+		margin-top: 15px;
+	}
+	
+	.container {
+		padding-top: 0px;
+		padding-bottom: 20px;
+	}
+	
+	@media (min-width: $screen-md-min) {
+		.right {
+			border-left: 1px solid $fidelity-white;
+		}
+	}
+	
+	.left .title, .right .title {
+		text-transform: uppercase;
+		font-size: 38px;
+		font-style: italic;
+		text-align: center;
+	}
+	.left .title strong, .right .title strong {
+		color: $fidelity-green;
+		font-weight: bold;
+	}
+	
+	.left .content, .right .content {
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 19px;
+		padding: 5px 0 5px 0;
+		margin-top: 10px;
+		border-top: 1px solid rgb(255, 255, 255);
+		border-top: 1px solid rgba(255, 255, 255, 0.3);
+		border-bottom: 1px solid rgb(255, 255, 255);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	}
+	
+	.left sup {
+		font-size: 40% !important;
+		top: -1.1em !important;
+	}
+	.right sup {
+		font-size: 70% !important;
+		top: -0.3em !important;
+	}
+}

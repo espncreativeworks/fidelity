@@ -1,0 +1,45 @@
+//
+// Custom Variables
+// --------------------------------------------------
+
+// Fonts
+// --------------------------------------------------
+$fidelity-proxima : 'proxima-nova-alt';
+
+// Brand Colors
+// --------------------------------------------------
+$fidelity-transparent: rgba(0,0,0,0.0);
+$fidelity-white: #fff;
+$fidelity-black: #000;
+$fidelity-light-grey: #cacaca;
+$fidelity-dark-grey: #383838;
+$fidelity-green: #5d9732;
+$fidelity-primary: $fidelity-black;
+$fidelity-accent: $fidelity-green; 
+$fidelity-html-bg: #000;
+$fidelity-header-bg: $fidelity-transparent;
+$espn-red: #c01c02;
+
+
+// Links
+// --------------------------------------------------
+$fidelity-link-color: $fidelity-white !default;
+$fidelity-link-hover-color: $fidelity-green !default;
+
+
+// Navbar
+// --------------------------------------------------
+$fidelity-navbar-default-bg: $fidelity-transparent;
+$fidelity-navbar-font-color: $fidelity-dark-grey;
+
+
+// Buttons
+// --------------------------------------------------
+$fidelity-btn-default-color: $fidelity-white !default;
+$fidelity-btn-default-bg: $fidelity-green !default;
+$fidelity-btn-default-border: $fidelity-transparent !default;
+
+// Carousel
+// --------------------------------------------------
+$fidelity-carousel-indicator-border-color: $fidelity-accent;
+$fidelity-carousel-indicator-active-bg: $fidelity-accent;

@@ -1,0 +1,155 @@
+.fidelity {
+	color: #000;
+	background-color: #fff;
+	
+	.container {
+		padding-bottom: 50px;
+	}
+	
+	.left {
+		line-height: 30px;
+		
+		.title {
+			font-size: 40px;
+			text-transform: uppercase;
+			font-style: italic;
+		}
+		.title strong {
+			color: $fidelity-green;
+		}
+		.subtitle {
+			font-size: 17px;
+			text-transform: uppercase;
+			font-style: italic;
+			border-bottom: 1px solid rgb(0,0,0);
+			border-bottom: 1px solid rgba(0,0,0,0.3);
+			
+			@media (max-width: $screen-xs-max) {
+				line-height: 17px;
+			}
+			@media (min-width: $screen-sm-min) {
+				line-height: 28px;
+			}
+		}
+	}
+	
+	.right {
+		.title {
+			font-size: 25px;
+			text-transform: uppercase;
+			font-style: italic;
+			text-align: center;
+		}
+		.title strong {
+			color: $fidelity-green;
+		}
+		.subtitle {
+			font-size: 18px;
+			text-transform: uppercase;
+			font-style: italic;
+			background: #000;
+			color: #fff;
+			text-align: center;
+			height: 35px;
+			padding-top: 5px;
+		}
+		
+		.viewpoints {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.table {
+			margin-top: 15px;	
+		}
+		.table .title {
+			text-align: left;
+		}
+		.table .headshot {
+			background-image: url($image-path + 'icon_headshot.png');
+			background-position: top center;
+			background-repeat: no-repeat;
+			width: 103px;
+			height: 103px;
+		}
+		.table td.shift {
+			background-image: url($image-path + 'icon_shift2.jpeg');
+			background-position: top center;
+			background-repeat: no-repeat;
+			width: 113px;
+			height: 90px;
+		}
+		.table td.scout {
+			background-image: url($image-path + 'icon_scout.jpg');
+			background-position: top center;
+			background-repeat: no-repeat;
+			width: 113px;
+			height: 90px;
+		}
+		.table td.trigger {
+			background-image: url($image-path + 'icon_trigger.jpg');
+			background-position: top center;
+			background-repeat: no-repeat;
+			width: 113px;
+			height: 90px;
+		}
+		.table td.learn {
+			background-image: url($image-path + 'icon_learn.jpg');
+			background-position: top center;
+			background-repeat: no-repeat;
+			width: 113px;
+			height: 90px;
+		}
+		.table .type {
+			color: $fidelity-green;
+			font-style: italic;
+			font-size: 10px;
+			text-transform: uppercase;
+		}
+		.table .title {
+			font-size: 11px;
+			font-weight: bold;
+			font-style: normal;
+			color: $fidelity-green;
+		}
+		.table .title a {
+			color: $fidelity-green;
+		}
+		.table .title a:hover {
+			color: #000;
+		}
+		.table .desc {
+			font-size: 12px;
+			padding-bottom: 5px;
+		}
+		.table td {
+			padding-top: 0;
+		}
+		.table td.scout:hover, .table td.trigger:hover, .table td.shift:hover {
+			cursor: pointer;
+			cursor: hand;
+		}
+		.table thead>tr>th, .table tbody>tr>th, .table tfoot>tr>th, .table thead>tr>td, .table tbody>tr>td, .table tfoot>tr>td {
+			vertical-align: top;
+			border: 0px;
+		}
+	}
+	
+	.stocks {
+		text-transform: uppercase;
+		
+		.scroll {
+			padding: 5px 0 5px 0;
+			margin-top: 50px;
+			border-top: 1px solid rgb(0,0,0);
+			border-top: 1px solid rgba(0,0,0,0.3);
+			border-bottom: 1px solid rgb(0,0,0);
+			border-bottom: 1px solid rgba(0,0,0,0.3);
+		}
+		.note {
+			color: $fidelity-green;
+			padding-top: 5px;
+			font-style: italic;
+			font-size: 11px;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+.tradetracker {
+	margin-top: -2px;
+	max-width: 1600px;
+	margin: 0 auto;
+	
+	.container.stretch{
+		max-width: 1600px;
+	}
+	
+	.title {
+		background: #000;
+		height: 34px;
+		text-align: right;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-style: italic;
+		padding-top: 8px;
+	}
+	
+	.content {
+		background: #fff;
+		color: #000;
+		height: 33px;
+		margin: 0;
+		padding-top: 8px;
+		font-style: italic;
+	}
+}

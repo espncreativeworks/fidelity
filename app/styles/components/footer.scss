@@ -1,0 +1,63 @@
+.footer {
+	background-image: url($image-path + 'bg_footer2.jpg');
+	background-color: $fidelity-green;
+	background-position: top left;
+	background-repeat: repeat;
+	min-height: 123px;
+	padding-bottom: 30px;
+	color: $fidelity-white;
+	
+	.margint {
+		margin-top: 20px;
+	}
+
+	.fb:hover, .tw:hover {
+		cursor: pointer;
+		cursor: hand;
+		color: #000;
+	}
+	.tt {
+		font-size: 28px;
+		color: #fff;
+		@media (min-width: $screen-sm-min){
+			border-left: 1px solid rgb(255, 255, 255);
+			border-left: 1px solid rgba(255, 255, 255, 0.3);
+		}
+		@media (min-width: $screen-md-min) {
+			border-right: 1px solid rgb(255, 255, 255);
+			border-right: 1px solid rgba(255, 255, 255, 0.3);
+		}
+	}
+	.tt:hover {
+		color: #000;
+		cursor: pointer;
+		cursor: hand;
+	}
+	.url {
+		font-size: 28px;
+		font-style: italic;
+	}
+	.note {
+		font-size: 11px;
+		font-style: italic;
+		margin-top: 40px;
+		
+		p {
+			text-align: justify;
+		}
+		p.first {
+			font-size: 14px;
+		}
+		p.second {
+			font-size: 12px;
+			font-weight: bold;
+		}
+	}
+	
+	a {
+		color: $fidelity-white;
+	}
+	a:hover {
+		color: #000;
+	}
+}

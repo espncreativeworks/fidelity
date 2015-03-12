@@ -1,0 +1,44 @@
+.edge {
+	background-image: url($image-path + 'bg_experts.png');
+	background-position: top center;
+	background-repeat: repeat;
+	background-color: #fff;
+
+	text-align: center;
+	color: #000;
+	
+	@media (min-width: $screen-md-min) {
+		padding: 30px 0 30px 0;
+	}
+	
+	.container {
+		padding-bottom: 20px;
+	}
+
+	.title {
+		text-transform: uppercase;
+		font-size: 30px;
+		font-style: italic;
+		border-bottom: 1px solid rgb(0, 0, 0);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	}
+	.title strong {
+		color: $fidelity-green;
+	}
+	.text {
+		font-size: 18px;
+		margin-top: 10px;
+	}
+	.text a {
+		font-style: italic;
+		font-weight: bold;
+		text-decoration: underline;
+		color: $fidelity-green;
+	}
+	.text a:hover {
+		font-style: italic;
+		font-weight: bold;
+		text-decoration: underline;
+		color: #000;
+	}
+}

@@ -1,0 +1,96 @@
+.header {
+	background-image: url($image-path + 'nfl/bg_header.jpg');
+	background-repeat: no-repeat;
+	background-color: $fidelity-html-bg;
+	
+	@media (max-width: $screen-xs-max){
+		.container {
+			padding-top: 10px !important;
+			padding-bottom: 10px !important;
+		}
+	}
+	@media (max-width: $screen-md-max){
+		background-position: top right;
+	}
+	@media (min-width: $screen-lg-min){
+		background-position: top center;
+	}
+	
+	.mlogo {
+		background-image: url($image-path + 'logo_fidelitytt_stacked.png');
+		background-position: center center;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 118px;
+		background-size: 300px 118px;
+	}
+	.mlogo:hover {
+		cursor: pointer;
+		cursor: hand;
+	}
+	
+	.fb:hover, .tw:hover {
+		cursor: pointer;
+		cursor: hand;	
+		color: $fidelity-green;
+	}
+	.tt {
+		color: #fff;
+	}
+	.tt:hover {
+		color: $fidelity-green;
+		cursor: pointer;
+		cursor: hand;
+	}
+	.vrule {
+		border-right: 1px solid rgb(255, 255, 255);
+		border-right: 1px solid rgba(255, 255, 255, 0.3);
+		height: 25px;
+	}
+	.countdown {
+		margin-top: 15px;
+		margin-bottom: 27px;
+		
+		.title {
+			background: $espn-red;
+			text-transform: uppercase;
+			font-style: italic;
+			font-weight: bold;
+			font-size: 10px;
+			text-align: center;
+		}
+		.dheader {
+			background: #000000;
+			font-size: 10px;
+			text-align: center;
+			text-transform: uppercase;
+			padding-top: 2px;
+			padding-left: 20px;
+			height: 18px;
+		}
+		.date {
+			text-transform: uppercase;
+			font-style: italic;
+			font-size: 11px;
+			text-align: center;
+			position: relative;
+			/*top: 25%;*/
+			top: 20%;
+			padding-top: 5px;
+			height: 23px;
+			border-right: 1px solid rgb(255, 255, 255);
+			border-right: 1px solid rgba(255, 255, 255, 0.3);
+		}
+		.datetime {
+			height: 37px;
+			border-bottom: 1px solid rgb(255, 255, 255);
+			border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+			
+			.clock {
+				font-size: 24px;
+				font-style: italic;
+				font-weight: bold;
+			}
+		}
+	}
+}

@@ -1,0 +1,146 @@
+html {
+  background-color: $fidelity-html-bg;
+}
+
+html.lt-ie9 {
+	.header { display: none; }
+	.tradetracker { display: none !important; }
+	.hero { display: none; }
+	.trades { display: none; }
+	.edge { display: none; }
+	.fidelity { display: none; }
+	.footer { display: none; }
+}
+
+body {
+	color: $fidelity-white;
+	font-family: "futura-pt",sans-serif;
+	background: #000;
+}
+
+.container {
+	padding-top: 20px;
+}
+
+.container.stretch {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  
+  & > .row {
+    margin: 0px !important;
+  }
+}
+
+#desktop-content-container,
+#phone-content-container,
+#rules-content-container {
+  background-image: none;
+  background-color: $fidelity-html-bg;
+}
+
+#rules-content-container {
+  padding-bottom: 120px;
+}
+
+.no-purchase {
+  text-transform: uppercase;
+}
+
+.gutter-less {
+  @include gutter-less();
+}
+
+.float-less {
+  @include float-less();
+}
+
+.nowrap {
+  @include nowrap();
+}
+
+.template {
+  @include template();
+}
+
+.martop {
+  margin-top: 20px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $fidelity-proxima;
+  font-weight: 300;
+  line-height: 1.1;
+  color: inherit;
+}
+
+a {
+  color: $fidelity-black;
+}
+a:hover {
+  color: $fidelity-green;
+  text-decoration: none;
+}
+a.active {
+  color: $fidelity-green;
+}
+
+.green {
+  color: $fidelity-green;
+}
+
+div.tt {
+	text-transform: uppercase;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 24px;
+	margin-top: -4px;
+}
+strong.tt {
+	font-style: italic;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.icon-arrow {
+  background-image: url($image-path + 'icon-arrow.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 16px;
+  width: 10px;
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.icon-tw {
+  background-image: url($image-path + 'icon-tw.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 28px;
+  width: 36px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#colorbox,
+#colorbox *,
+#colorbox *:before,
+#colorbox *:after,
+[id^="cbox"],
+[id^="cbox"] *,
+[id^="cbox"] *:before,
+[id^="cbox"] *:after, {
+  @include box-sizing(content-box);
+}
+
+#colorbox {
+  padding-right: 44px !important;
+}
