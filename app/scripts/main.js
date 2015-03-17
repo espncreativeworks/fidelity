@@ -103,7 +103,7 @@ $(document).ready(function() {
   	ga('send', 'event', 'Trades', 'Button', 'Im In');
   });
   $('.trades .right a.btn').on('click',function() {
-  	ga('send', 'event', 'Trades', 'Button', 'When To Pull the Trigger');
+  	ga('send', 'event', 'Trades', 'Button', 'Learn More');
   });
   
   $('.edge .text a').on('click',function() {
