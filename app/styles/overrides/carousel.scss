@@ -247,8 +247,19 @@
 	}
 }
 
+.carousel-info-mdlg {
+	height: 315px;
+}
+.carousel-info-sm {
+	height: 300px;
+}
+.carousel-info-xs {
+	height: 270px;
+}
+
 .carousel-info .item {
 	border-bottom: 1px solid rgb(0,0,0);
 	border-bottom: 1px solid rgba(0,0,0,0.3);
 	padding-bottom: 15px;
-}
+			font-variant: small-caps;
+		}

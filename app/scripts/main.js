@@ -22,15 +22,37 @@ $(document).ready(function() {
 	  , bitly = 'http://es.pn/1E4BbVJ';
 	;
 
-  $('.carousel').carousel({
+  $('#carousel-example-generic').carousel({
+    interval: 5000,
+	  swipe: 30
+  });
+  $("#carousel-example-generic").swiperight(function() {
+  	$("#carousel-example-generic").carousel('prev');
+  });
+  $("#carousel-example-generic").swipeleft(function() {
+    $("#carousel-example-generic").carousel('next');
+  });
+  
+  $('.carousel-info-xs').carousel({
     interval: 5000,
     swipe: 30
   });
-  $(".carousel").swiperight(function() {
-  	$(".carousel").carousel('prev');
+  $(".carousel-info-xs").swiperight(function() {
+  	$(".carousel-info-xs").carousel('prev');
   });
-  $(".carousel").swipeleft(function() {
-    $(".carousel").carousel('next');
+  $(".carousel-info-xs").swipeleft(function() {
+    $(".carousel-info-xs").carousel('next');
+  });
+  
+  $('.carousel-info-sm').carousel({
+    interval: 5000,
+    swipe: 30
+  });
+  $(".carousel-info-sm").swiperight(function() {
+  	$(".carousel-info-sm").carousel('prev');
+  });
+  $(".carousel-info-sm").swipeleft(function() {
+    $(".carousel-info-sm").carousel('next');
   });
   
   initCountdown(new Date(nfldiso));

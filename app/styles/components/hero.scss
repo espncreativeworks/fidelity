@@ -5,8 +5,7 @@
 	background-color: $fidelity-html-bg;
 	
 	@media (min-width: $screen-md-min){
-		padding-bottom: 30px;
-		min-height: 617px;
+		min-height: 615px;
 	}
 	@media (max-width: $screen-md-max){
 		background-position: top right;
@@ -75,6 +74,10 @@
 			height: 250px;
 		}
 	}
+	.left .video .item.active.left, .left .video .item.next.left {
+		margin-top: 0 !important;
+	}
+	
 	
 	.right .main {
 		background: #000;
