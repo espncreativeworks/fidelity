@@ -11,17 +11,19 @@ $(document).ready(function() {
 	  , _successLOAD
 	  , _errorLOAD
 	  , jqxhr
-	  , nbad = new Date("February 19, 2015 20:00:00 GMT")
+	  , nbad = new Date("June 26, 2015 00:00:00 GMT")
 	  , nbadiso = nbad.toISOString()
 	  , nhld = new Date("March 2, 2015 20:00:00 GMT")
 	  , nhldiso = nhld.toISOString()
 	  , nflfad = new Date("March 10, 2015 20:00:00 GMT")
 	  , nflfadiso = nflfad.toISOString()
-	  , nfld = new Date("April 30, 2015 23:00:00 GMT")
+	  , nfld = new Date("May 1, 2015 00:00:00 GMT")
 	  , nfldiso = nfld.toISOString()
+	  , mlbd = new Date("August 1, 2015 03:59:59 GMT")
+	  , mlbdiso = mlbd.toISOString()
 	  , bitly = 'http://es.pn/1E4BbVJ';
 	;
-
+	
   $('#carousel-example-generic').carousel({
     interval: 5000,
 	  swipe: 30
@@ -33,29 +35,55 @@ $(document).ready(function() {
     $("#carousel-example-generic").carousel('next');
   });
   
-  $('.carousel-info-xs').carousel({
+  $('.carousel-info-video').carousel({
     interval: 5000,
     swipe: 30
   });
-  $(".carousel-info-xs").swiperight(function() {
-  	$(".carousel-info-xs").carousel('prev');
+  $(".carousel-info-video").swiperight(function() {
+  	$(".carousel-info-video").carousel('prev');
   });
-  $(".carousel-info-xs").swipeleft(function() {
-    $(".carousel-info-xs").carousel('next');
-  });
-  
-  $('.carousel-info-sm').carousel({
-    interval: 5000,
-    swipe: 30
-  });
-  $(".carousel-info-sm").swiperight(function() {
-  	$(".carousel-info-sm").carousel('prev');
-  });
-  $(".carousel-info-sm").swipeleft(function() {
-    $(".carousel-info-sm").carousel('next');
+  $(".carousel-info-video").swipeleft(function() {
+    $(".carousel-info-video").carousel('next');
   });
   
-  initCountdown(new Date(nfldiso));
+	/*
+	$('.arrow').affix({
+	  offset: {
+	    top: 10,
+	    bottom: 100
+	  }
+	});
+	
+	var properties = {
+		fontSize: 30
+	};
+	
+	var el = $('.arrow .acont span');
+	el.pulse(properties, {duration : 1000, pulses : -1});
+	*/
+	
+	$(".hero").on("activate.bs.scrollspy", function(){
+		console.log("scrolled hero");
+		//ga('send', 'event', 'Section', 'ScrollSpy', 'Hero');	   
+	});
+	$(".trades").on("activate.bs.scrollspy", function(){
+		console.log("scrolled trades");
+		//ga('send', 'event', 'Section', 'ScrollSpy', 'Trades');	   
+	});
+	$(".edge").on("activate.bs.scrollspy", function(){
+		console.log("scrolled edge");
+		//ga('send', 'event', 'Section', 'ScrollSpy', 'Edge');	   
+	});
+	$(".fidelity").on("activate.bs.scrollspy", function(){
+		console.log("scrolled fidelity");
+		//ga('send', 'event', 'Section', 'ScrollSpy', 'Fidelity');	   
+	});
+	$(".footer").on("activate.bs.scrollspy", function(){
+		console.log("scrolled footer");
+		//ga('send', 'event', 'Section', 'ScrollSpy', 'Footer');	   
+	});
+
+  initCountdown(new Date(mlbdiso));
   getStocks();
   
   setInterval(function(){ 
@@ -86,6 +114,14 @@ $(document).ready(function() {
   	ga('send', 'event', 'Viewpoints', 'Image', 'What Investors Can Learn From GMs');
   	window.open('https://www.fidelity.com/viewpoints/offseason-manager-moves-TradeTalk','_blank');
   });
+  $('td.myths').on('click',function() {
+  	ga('send', 'event', 'Viewpoints', 'Image', 'ETF Myths Explained');
+  	window.open('https://www.fidelity.com/viewpoints/active-trader/etf-myths','_blank');
+  });
+  $('td.fstocks').on('click',function() {
+  	ga('send', 'event', 'Viewpoints', 'Image', 'Five Tools to Research Stocks');
+  	window.open('https://www.fidelity.com/viewpoints/active-trader/how-to-research-stocks','_blank');
+  });
   $('a.shift').on('click',function() {
   	ga('send', 'event', 'Viewpoints', 'Text', 'Shift Change');
   });
@@ -97,6 +133,12 @@ $(document).ready(function() {
   });
   $('a.learn').on('click',function() {
   	ga('send', 'event', 'Viewpoints', 'Text', 'What Investors Can Learn From GMs');
+  });
+  $('a.myths').on('click',function() {
+  	ga('send', 'event', 'Viewpoints', 'Text', 'ETF Myths Explained');
+  });
+  $('a.fstocks').on('click',function() {
+  	ga('send', 'event', 'Viewpoints', 'Text', 'Five Tools to Research Stocks');
   });
   
   $('.hero .trending .title').on('click',function() {
@@ -122,14 +164,18 @@ $(document).ready(function() {
   });
   
   $('.trades .left a.btn').on('click',function() {
-  	ga('send', 'event', 'Trades', 'Button', 'Im In');
+  	ga('send', 'event', 'Trades', 'Button', 'Trade Free');
   });
   $('.trades .right a.btn').on('click',function() {
-  	ga('send', 'event', 'Trades', 'Button', 'Learn More');
+  	ga('send', 'event', 'Trades', 'Button', 'Trading at Fidelity');
   });
   
   $('.edge .text a').on('click',function() {
   	ga('send', 'event', 'Edge', 'Link', 'Advantage You Need');
+  });
+  
+  $('.btn-subscribe').on('click',function() {
+  	ga('send', 'event', 'Viewpoints', 'Button', 'Subscribe');
   });
   
   

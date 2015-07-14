@@ -1,5 +1,5 @@
 .header {
-	background-image: url($image-path + 'nfl/bg_header.jpg');
+	background-image: url($image-path + 'mlb/bg_header4.jpg');
 	background-repeat: no-repeat;
 	background-color: $fidelity-html-bg;
 	
@@ -9,8 +9,13 @@
 			padding-bottom: 10px !important;
 		}
 	}
+	@media (min-width: $screen-md-min) {
+		.container {
+			padding-top: 10px;
+		}
+	}
 	@media (max-width: $screen-md-max){
-		background-position: top right;
+		background-position: top center;
 	}
 	@media (min-width: $screen-lg-min){
 		background-position: top center;

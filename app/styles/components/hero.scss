@@ -1,14 +1,18 @@
 .hero {
-	background-image: url($image-path + 'nfl/bg_hero.jpg');
+	background-image: url($image-path + 'mlb/bg_hero4.jpg');
 	//background-position: top center;
 	background-repeat: no-repeat;
 	background-color: $fidelity-html-bg;
 	
 	@media (min-width: $screen-md-min){
-		min-height: 615px;
+		//min-height: 615px;
+		//min-height: 570px;
 	}
-	@media (max-width: $screen-md-max){
-		background-position: top right;
+	@media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+		background-position: top center;
+	}
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+		background-position: top center;
 	}
 	@media (min-width: $screen-lg-min){
 		background-position: top center;
@@ -23,7 +27,7 @@
 	
 	@media (min-width: $screen-md-min) {
 		.left {
-			margin-top: 50px;
+			margin-top: 10px;
 		}
 	}
 	.left .title {
@@ -56,7 +60,7 @@
 			font-size: 15px;
 		}
 		@media (min-width: $screen-md-min) {
-			font-size: 18px;
+			font-size: 15px;
 		}
 		margin-top: 20px;
 		padding: 10px 0 10px 0;
@@ -79,6 +83,9 @@
 	}
 	
 	
+	.right {
+		padding-bottom: 5px;
+	}
 	.right .main {
 		background: #000;
 		padding: 20px 20px 10px 20px;

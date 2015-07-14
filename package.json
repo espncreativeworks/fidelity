@@ -23,7 +23,16 @@
     "grunt-rev": "~0.1.0",
     "grunt-svgmin": "~0.2.0",
     "grunt-usemin": "~0.1.10",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.12.36",
+    "karma-chrome-launcher": "^0.1.12",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-ie-launcher": "^0.2.0",
+    "karma-jasmine": "^0.3.5",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "karma-safari-launcher": "^0.1.1",
     "load-grunt-tasks": "~0.1.0",
+    "phantomjs": "^1.9.17",
     "time-grunt": "~0.1.1"
   },
   "engines": {

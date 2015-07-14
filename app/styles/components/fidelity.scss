@@ -99,6 +99,20 @@
 			width: 113px;
 			height: 90px;
 		}
+		.table td.myths {
+			background-image: url($image-path + 'thumbs_myths.jpg');
+			background-position: top center;
+			background-repeat: no-repeat;
+			width: 113px;
+			height: 90px;
+		}
+		.table td.fstocks {
+			background-image: url($image-path + 'icon_stocks.jpg');
+			background-position: top center;
+			background-repeat: no-repeat;
+			width: 113px;
+			height: 90px;
+		}
 		.table .type {
 			color: $fidelity-green;
 			font-style: italic;
@@ -106,7 +120,7 @@
 			text-transform: uppercase;
 		}
 		.table .title {
-			font-size: 11px;
+			font-size: 16px;
 			font-weight: bold;
 			font-style: normal;
 			color: $fidelity-green;
@@ -118,13 +132,22 @@
 			color: #000;
 		}
 		.table .desc {
-			font-size: 12px;
+			font-size: 14px;
 			padding-bottom: 5px;
+			
+			a {
+				color: $fidelity-green;
+				font-variant: small-caps;
+				
+				&:hover {
+					color: #000;
+				}
+			}
 		}
 		.table td {
 			padding-top: 0;
 		}
-		.table td.scout:hover, .table td.trigger:hover, .table td.shift:hover {
+		.table td.scout:hover, .table td.trigger:hover, .table td.shift:hover, .table td.learn:hover, .table td.myths:hover, .table td.fstocks:hover {
 			cursor: pointer;
 			cursor: hand;
 		}
