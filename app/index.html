@@ -126,22 +126,31 @@
 		  				  	<!-- Wrapper for slides -->
 		  				    <div class="carousel-inner" role="listbox">
 		  				    	<div class="item active">
-		  				      	<iframe class="player1 center-block" id="player1" src="https://www.youtube.com/embed/L7Gq1D_5e2s?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-		  					    </div>
-		  					    <div class="item">
-		  					    	<iframe class="player2 center-block" id="player2" src="https://www.youtube.com/embed/BEEvaNA-eBc?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-		  					    </div>
-		  					    <div class="item">
-		  					    	<iframe class="player3 center-block" id="player3" src="https://www.youtube.com/embed/Ym7V3ai9yIc?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-		  					    </div>
-		  					  </div>
-		  						
-		  					  <!-- Indicators -->
-		  					  <ol class="carousel-indicators">
-		  					    <li data-target="#carousel-video" data-slide-to="0" class="active"></li>
-		  					    <li data-target="#carousel-video" data-slide-to="1"></li>
-		  					    <li data-target="#carousel-video" data-slide-to="2"></li>
-		  					  </ol>
+		  				      	<iframe class="player1 center-block" id="player1" src="https://www.youtube.com/embed/QK_HjaL31OI?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+		  				      </div>
+		  				      <div class="item">
+		  				      	<iframe class="player2 center-block" id="player2" src="https://www.youtube.com/embed/RJHBYACNrzY?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+		  				      </div>
+		  				      <div class="item">
+		  				      	<iframe class="player3 center-block" id="player3" src="https://www.youtube.com/embed/z2lMUx6Q9Wg?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+		  				      </div>
+		  				      <div class="item">
+		  				      	<iframe class="player4 center-block" id="player4" src="https://www.youtube.com/embed/wSstI4MQhyMc?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+		  				      </div>
+		  				      <div class="item">
+		  				      	<iframe class="player5 center-block" id="player5" src="https://www.youtube.com/embed/LRdRzoW-C9c?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+		  				      </div>
+		  				    </div>
+		  				    
+		  				    <!-- Indicators -->
+		  				    <ol class="carousel-indicators">
+		  				      <li data-target="#carousel-video" data-slide-to="0" class="active"></li>
+		  				      <li data-target="#carousel-video" data-slide-to="1"></li>
+		  				      <li data-target="#carousel-video" data-slide-to="2"></li>
+		  				      <li data-target="#carousel-video" data-slide-to="3"></li>
+		  				      <li data-target="#carousel-video" data-slide-to="4"></li>
+		  				    </ol>
+		  				    
 		  					</div>
 		  				</div>	  					
 		  			</div> <!-- ./video -->
@@ -541,7 +550,7 @@
         var firstScriptTag = document.getElementsByTagName('script')[0];
         firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
   
-        var player1, player2, player3;
+        var player1, player2, player3, player4, player5;
         function onYouTubeIframeAPIReady() {
           player1 = new YT.Player('player1', {
             events: {
@@ -556,6 +565,18 @@
             }
           });
           player3 = new YT.Player('player3', {
+            events: {
+              'onReady': onPlayerReady,
+              'onStateChange': onPlayerStateChange
+            }
+          });
+          player4 = new YT.Player('player4', {
+            events: {
+              'onReady': onPlayerReady,
+              'onStateChange': onPlayerStateChange
+            }
+          });
+          player5 = new YT.Player('player5', {
             events: {
               'onReady': onPlayerReady,
               'onStateChange': onPlayerStateChange
