@@ -24,21 +24,30 @@ $(document).ready(function() {
 	  , bitly = 'http://es.pn/1E4BbVJ';
 	;
 	
+
   $('#carousel-example-generic').carousel({
     interval: 5000,
-	  swipe: 30
+    swipe: 30
   });
+
   $("#carousel-example-generic").swiperight(function() {
   	$("#carousel-example-generic").carousel('prev');
   });
   $("#carousel-example-generic").swipeleft(function() {
     $("#carousel-example-generic").carousel('next');
   });
-  
+
+  var imgCount = 5;
   $('.carousel-info-video').carousel({
-    interval: 5000,
-    swipe: 30
+      interval: 5000
+    });
+  $('.carousel-info-video').bind('slid', function(){
+    imgCount--;
+    if (imgCount == 0) {
+      $('.carousel-info-video').carousel('pause');
+    }
   });
+
   $(".carousel-info-video").swiperight(function() {
   	$(".carousel-info-video").carousel('prev');
   });
