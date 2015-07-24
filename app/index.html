@@ -135,7 +135,7 @@
 		  				      	<iframe class="player3 center-block" id="player3" src="https://www.youtube.com/embed/z2lMUx6Q9Wg?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 		  				      </div>
 		  				      <div class="item">
-		  				      	<iframe class="player4 center-block" id="player4" src="https://www.youtube.com/embed/wSstI4MQhyMc?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+		  				      	<iframe class="player4 center-block" id="player4" src="https://www.youtube.com/embed/wSstI4MQhyM?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 		  				      </div>
 		  				      <div class="item">
 		  				      	<iframe class="player5 center-block" id="player5" src="https://www.youtube.com/embed/LRdRzoW-C9c?rel=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
@@ -596,11 +596,16 @@
         		} else {
         			$('.carousel-info-video').carousel('pause');
         		}
+
+        		$('.carousel-info-video').on('slide.bs.carousel', function () {
+        			event.target.pauseVideo();
+				});
         	} else if (event.data == YT.PlayerState.ENDED || YT.PlayerState == 0) {
         		$('.carousel-info-video').carousel('cycle');
         	} else {
         		$('.carousel-info-video').carousel('cycle');
-        	}        }
+        	}       
+        }
   </script>
   
   <script>
