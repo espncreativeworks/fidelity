@@ -39,6 +39,18 @@ $(document).ready(function() {
     interval: 5000,
     swipe: 30
   });
+  
+  var imgCount = 5;
+  $('.carousel-info-video').carousel({
+      interval: 5000
+    });
+  $('.carousel-info-video').bind('slid', function(){
+    imgCount--;
+    if (imgCount == 0) {
+      $('.carousel-info-video').carousel('pause');
+    }
+  });
+  
   $(".carousel-info-video").swiperight(function() {
   	$(".carousel-info-video").carousel('prev');
   });
