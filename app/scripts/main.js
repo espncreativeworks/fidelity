@@ -19,7 +19,7 @@ $(document).ready(function() {
 	  , nflfadiso = nflfad.toISOString()
 	  , nfld = new Date("May 1, 2015 00:00:00 GMT")
 	  , nfldiso = nfld.toISOString()
-	  , mlbd = new Date("August 1, 2015 03:59:59 GMT")
+	  , mlbd = new Date("July 31, 2015 20:00:00 GMT")
 	  , mlbdiso = mlbd.toISOString()
 	  , bitly = 'http://es.pn/1E4BbVJ';
 	;
