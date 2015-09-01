@@ -17,7 +17,7 @@ $(document).ready(function() {
 	  , nhldiso = nhld.toISOString()
 	  , nflfad = new Date("March 10, 2015 20:00:00 GMT")
 	  , nflfadiso = nflfad.toISOString()
-	  , nfld = new Date("May 1, 2015 00:00:00 GMT")
+	  , nfld = new Date("October 28, 2015 20:00:00 GMT")
 	  , nfldiso = nfld.toISOString()
 	  , mlbd = new Date("July 31, 2015 20:00:00 GMT")
 	  , mlbdiso = mlbd.toISOString()
@@ -95,7 +95,7 @@ $(document).ready(function() {
 		//ga('send', 'event', 'Section', 'ScrollSpy', 'Footer');	   
 	});
 
-  initCountdown(new Date(mlbdiso));
+  initCountdown(new Date(nfldiso));
   getStocks();
   
   setInterval(function(){ 
