@@ -17,7 +17,7 @@ $(document).ready(function() {
 	  , nhldiso = nhld.toISOString()
 	  , nflfad = new Date("March 10, 2015 20:00:00 GMT")
 	  , nflfadiso = nflfad.toISOString()
-	  , nfld = new Date("October 28, 2015 20:00:00 GMT")
+	  , nfld = new Date("November 3, 2015 20:00:00 GMT")
 	  , nfldiso = nfld.toISOString()
 	  , mlbd = new Date("July 31, 2015 20:00:00 GMT")
 	  , mlbdiso = mlbd.toISOString()

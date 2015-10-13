@@ -71,8 +71,8 @@
 			width: 103px;
 			height: 103px;
 		}
-		.table td.shift {
-			background-image: url($image-path + 'icon_shift2.jpeg');
+		.table td.trading-tips {
+			background-image: url($image-path + 'icon_trading-tips.jpeg');
 			background-position: top center;
 			background-repeat: no-repeat;
 			width: 113px;
@@ -147,7 +147,7 @@
 		.table td {
 			padding-top: 0;
 		}
-		.table td.scout:hover, .table td.trigger:hover, .table td.shift:hover, .table td.learn:hover, .table td.myths:hover, .table td.fstocks:hover {
+		.table td.scout:hover, .table td.trigger:hover, .table td.trading-tips:hover, .table td.learn:hover, .table td.myths:hover, .table td.fstocks:hover {
 			cursor: pointer;
 			cursor: hand;
 		}
