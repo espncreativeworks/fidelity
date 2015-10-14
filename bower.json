@@ -12,7 +12,8 @@
     "countDown.js": "*",
     "uri.js": "~1.11.2",
     "jquery.cookie": "~1.4.0",
-    "shadowbox": "~3.0.3"
+    "shadowbox": "~3.0.3",
+    "bootstrap": "~3.3.5"
   },
   "devDependencies": {}
 }
