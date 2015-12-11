@@ -95,7 +95,7 @@ $(document).ready(function() {
 		//ga('send', 'event', 'Section', 'ScrollSpy', 'Footer');	   
 	});
 
-  initCountdown(new Date(nfldiso));
+  initCountdown(new Date(mlbdiso));
   getStocks();
   
   setInterval(function(){ 
@@ -151,6 +151,9 @@ $(document).ready(function() {
   });
   $('a.fstocks').on('click',function() {
   	ga('send', 'event', 'Viewpoints', 'Text', 'Five Tools to Research Stocks');
+  });
+  $('a.trading-tips').on('click',function() {
+    ga('send', 'event', 'Viewpoints', 'Text', '5 Trading Tips');
   });
   
   $('.hero .trending .title').on('click',function() {
